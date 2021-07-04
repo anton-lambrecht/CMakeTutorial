@@ -1,4 +1,4 @@
-# Install script for directory: /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1
+# Install script for directory: /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,13 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/testLib/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

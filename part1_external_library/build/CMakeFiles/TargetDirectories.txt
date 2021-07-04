@@ -1,0 +1,6 @@
+/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_external_library/build/CMakeFiles/rebuild_cache.dir
+/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_external_library/build/CMakeFiles/edit_cache.dir
+/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_external_library/build/CMakeFiles/hello.dir
+/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_external_library/build/testLib/CMakeFiles/rebuild_cache.dir
+/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_external_library/build/testLib/CMakeFiles/edit_cache.dir
+/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_external_library/build/testLib/CMakeFiles/testLib.dir

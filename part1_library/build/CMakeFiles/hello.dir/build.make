@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.19.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1
+CMAKE_SOURCE_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build
+CMAKE_BINARY_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello.dir/depend.make
@@ -78,43 +78,29 @@ include CMakeFiles/hello.dir/flags.make
 
 CMakeFiles/hello.dir/main.cpp.o: CMakeFiles/hello.dir/flags.make
 CMakeFiles/hello.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/main.cpp.o -c /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/main.cpp.o -c /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/main.cpp
 
 CMakeFiles/hello.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/main.cpp > CMakeFiles/hello.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/main.cpp > CMakeFiles/hello.dir/main.cpp.i
 
 CMakeFiles/hello.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/main.cpp -o CMakeFiles/hello.dir/main.cpp.s
-
-CMakeFiles/hello.dir/src/testClass.cpp.o: CMakeFiles/hello.dir/flags.make
-CMakeFiles/hello.dir/src/testClass.cpp.o: ../src/testClass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello.dir/src/testClass.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello.dir/src/testClass.cpp.o -c /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/src/testClass.cpp
-
-CMakeFiles/hello.dir/src/testClass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/src/testClass.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/src/testClass.cpp > CMakeFiles/hello.dir/src/testClass.cpp.i
-
-CMakeFiles/hello.dir/src/testClass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/src/testClass.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/src/testClass.cpp -o CMakeFiles/hello.dir/src/testClass.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/main.cpp -o CMakeFiles/hello.dir/main.cpp.s
 
 # Object files for target hello
 hello_OBJECTS = \
-"CMakeFiles/hello.dir/main.cpp.o" \
-"CMakeFiles/hello.dir/src/testClass.cpp.o"
+"CMakeFiles/hello.dir/main.cpp.o"
 
 # External object files for target hello
 hello_EXTERNAL_OBJECTS =
 
 hello: CMakeFiles/hello.dir/main.cpp.o
-hello: CMakeFiles/hello.dir/src/testClass.cpp.o
 hello: CMakeFiles/hello.dir/build.make
+hello: testLib/libtestLib.a
 hello: CMakeFiles/hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +113,6 @@ CMakeFiles/hello.dir/clean:
 .PHONY : CMakeFiles/hello.dir/clean
 
 CMakeFiles/hello.dir/depend:
-	cd /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1 /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1 /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello.dir/depend
 

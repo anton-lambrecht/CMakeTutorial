@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ar"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ar"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build"
+			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -254,40 +254,8 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/local/bin/x86_64-apple-darwin20-gcc-9.3.0"
-		},
-		{
-			"name" : "CMAKE_C_COMPILER_AR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
-				}
-			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/x86_64-apple-darwin20-gcc-ar-9"
-		},
-		{
-			"name" : "CMAKE_C_COMPILER_RANLIB",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/x86_64-apple-darwin20-gcc-ranlib-9"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -575,7 +543,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1"
+			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -619,7 +587,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ld"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ld"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -731,7 +699,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/nm"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/nm"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -743,7 +711,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -775,7 +743,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objdump"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/objdump"
 		},
 		{
 			"name" : "CMAKE_OSX_ARCHITECTURES",
@@ -935,7 +903,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ranlib"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ranlib"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1171,7 +1139,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/strip"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/strip"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1211,7 +1179,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build"
+			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build"
 		},
 		{
 			"name" : "hello_SOURCE_DIR",
@@ -1223,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1"
+			"value" : "/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library"
 		}
 	],
 	"kind" : "cache",

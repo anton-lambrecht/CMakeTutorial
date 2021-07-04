@@ -6,17 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/testClass.h
-
-/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/main.cpp
-iostream
--
-testClass.h
-/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/testClass.h
-
-/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/src/testClass.cpp
-testClass.h
-/Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/src/testClass.h
-iostream
--
-

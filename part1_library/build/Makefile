@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1
+CMAKE_SOURCE_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build
+CMAKE_BINARY_DIR = /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/CMakeFiles /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/CMakeFiles /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antonlambrecht/Desktop/Ugent/C_make_tutorial/part1_library/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,19 @@ hello/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
+#=============================================================================
+# Target rules for targets named testLib
+
+# Build rule for target.
+testLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testLib
+.PHONY : testLib
+
+# fast build rule for target.
+testLib/fast:
+	$(MAKE) $(MAKESILENT) -f testLib/CMakeFiles/testLib.dir/build.make testLib/CMakeFiles/testLib.dir/build
+.PHONY : testLib/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -169,33 +182,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/testClass.o: src/testClass.cpp.o
-
-.PHONY : src/testClass.o
-
-# target to build an object file
-src/testClass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/testClass.cpp.o
-.PHONY : src/testClass.cpp.o
-
-src/testClass.i: src/testClass.cpp.i
-
-.PHONY : src/testClass.i
-
-# target to preprocess a source file
-src/testClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/testClass.cpp.i
-.PHONY : src/testClass.cpp.i
-
-src/testClass.s: src/testClass.cpp.s
-
-.PHONY : src/testClass.s
-
-# target to generate assembly for a file
-src/testClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/testClass.cpp.s
-.PHONY : src/testClass.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,12 +191,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
+	@echo "... testLib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/testClass.o"
-	@echo "... src/testClass.i"
-	@echo "... src/testClass.s"
 .PHONY : help
 
 
